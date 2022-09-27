@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+        <nav class="navigation">
+            <img class="logo" src="" alt="Логотип компании Cедона">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="information">Главная</a></li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="about sedona">О Седоне</a></li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+            </ul>
+            <ul class="navigation-user">
+              <li class="navigation-item">
+              <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
+              <li class="navigation-item">
+              <a class="navigation-link" href="#"><span class="visually-hidden">Лайк</span></a></li>
+              <li class="navigation-item">
+              <a class="navigation-link" href="#"><span class="visually-hidden">Хочу сюда</span></a></li>
+          </nav>
+    </header>
+    <main class="page-main">
+      <section class="choose-hotels">
+        <h1 class="title-choose-hotels">Гостиницы Седоны</h1>
+        <a href="#"><span>Гостиницы</span></a>
+        <p class="hotel-service">Инфраструктура:</p>
+        <form class="" action="https://echo.htmlacademy.ru/" method="post">
+        <label><input type="checkbox" checked>Бассейн</label>
+        <label><input type="checkbox" checked>Парковка</label>
+        <label><input type="checkbox">Wi-Fi</label>
+        </form>
+        <p class="type-hotel">Тип Жилья:</p>
+        <form class="" action="https://echo.htmlacademy.ru/" method="post">
+        <label><input type="radio" name="hotel" checked>Гостиница</label>
+        <label><input type="radio" name="hotel">Мотель</label>
+        <label><input type="radio" name="hotel">Апартаменты</label>
+        </form>
+        <p class="price">Стоимость,Р:</p>
+        <form class="" action="https://echo.htmlacademy.ru/" method="post">
+        <label><input type="range" min="0" max="900"></label>
+      </section>
+      <section class="option-hotels">
+        <div class="search-hotels">
+          <h2 class="title-search">Найдено Гостиниц:38</h2>
+          <form action="http:\\echo.htmlacademy.ru/" method="post">
+            <input type="text" name="text" placeholder="Сначала дешевые" />
+          </form>
+        </div>
+        <div class="description-hotels">
+        <ul class="description-hotel-list">
+        <li class="hotel-item"><img src="" alt="Картинка отеля"></li>
+        <li class="hotel-item"><img src="" alt="Картинка отеля"></li>
+        <li class="hotel-item"><img src="" alt="Картинка отеля"></li>
+        <li class="hotel-item"><img src="" alt="Картинка отеля"></li>
+        </ul>
+        </div>
+      </section>
+      <section class="information">
+        <h3 class="information-title">
+          <a href="#">Подпишитесь на рассылку</a>
+        </h3>
+        <p class="information-description">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="newsletter-form" action="http:\\echo.htmlacademy.ru/" method="post">
+        
+          <label for="newsletter-email"></label>
+          <input
+            class="field"
+            type="email"
+            placeholder="Ваш e-mail"
+            name="newsletter-email"
+            id="newsletter-email"
+            required/>
+          <button class="button button-newsletter-button" type="submit">
+            <span>ПОДПИСАТЬСЯ</span>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="social-networks">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#"
+              ><img class="social-vk" src="" alt="страничка в контакте"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a href="#"
+              ><img class="social-telegram" src="" alt="канал в телеграм"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a href="#"
+              ><img class="social-youtybe" src="" alt="канал в ютубе"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts-phone">
+        <a class="phone" href="tel:+7(812)8121212">+7(812)812-12-12</a>
+      </section>
+      <section class="website">
+        <a href="#"
+          ><img class="website-linlk" src="" alt="ссылка на сайт .htmlacademy"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>
