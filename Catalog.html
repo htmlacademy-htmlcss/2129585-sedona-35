@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Catalog-Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="page-header">
@@ -48,23 +49,14 @@
               /><span class="visually-hidden">Лайк</span></a
             >
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"
-              ><span class="visually-hidden">Хочу сюда</span></a
-            >
+          <li class="navigation-accept">
+            <button class="button-accept">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <section class="choose-hotels">
-        <img
-          class="photomain"
-          src="catalogfoto/photomain.jpg"
-          width="1200"
-          height="412"
-          alt="общая фотография"
-        />
         <h1 class="title-choose-hotels">Гостиницы Седоны</h1>
         <div class="hotel-icons">
           <img src="catalogfoto/house.svg" width="12" height="12" alt="домик" />
@@ -75,30 +67,32 @@
             alt="стрелка"
           />
         </div>
-        <a href="#"><p>Гостиницы</p></a>
+        <a href="#"><p class="hotel">Гостиницы</p></a>
         <p class="hotel-service">Инфраструктура:</p>
         <br />
-        <form class="" action="https://echo.htmlacademy.ru/" method="post">
+        <form
+          class="hotel-apartment"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
           <label><input type="checkbox" checked />Бассейн</label><br />
           <label><input type="checkbox" checked />Парковка</label><br />
           <label><input type="checkbox" />Wi-Fi</label><br />
-          <p class="type-hotel">Тип Жилья:</p>
+          <p class="hotel-service">Тип Жилья:</p>
           <br />
           <label><input type="radio" name="hotel" checked />Гостиница</label
           ><br />
           <label><input type="radio" name="hotel" />Мотель</label><br />
           <label><input type="radio" name="hotel" />Апартаменты</label><br />
         </form>
-        <p class="price">Стоимость,Р:</p>
+        <p class="hotel-service">Стоимость,Р:</p>
         <form class="" action="https://echo.htmlacademy.ru/" method="post">
           <label><input type="range" min="0" max="900" /></label>
-          <button class="button-use">Применить</button>
         </form>
-        <form>
-          <input type="reset" name="reset" />
-        </form>
+        <button class="button-use">Применить</button>
+        <a class="cancel" href="#">Сбросить</a>
       </section>
-      <div class="search-hotels">
+      <article class="description-hotels">
         <h2 class="title-search">Найдено Гостиниц:38</h2>
         <form action="http://echo.htmlacademy.ru/" method="post">
           <input type="text" name="text" placeholder="Сначала дешевые" />
@@ -129,8 +123,7 @@
             />
           </li>
         </ul>
-      </div>
-      <article class="description-hotels">
+
         <ul class="description-hotel-list">
           <li class="hotel-item">
             <section>
@@ -142,7 +135,9 @@
                 <p class="cost">от 4000Р</p>
               </div>
               <div class="hotel-information">
-                <a class="detail-information" href="#">ПОДРОБНЕЕ</a>
+                <a class="detail-information" href="#"
+                  ><span class="detail">ПОДРОБНЕЕ</span></a
+                >
                 <button class="button-choose">В ИЗБРАННОЕ</button>
               </div>
               <div class="rating-star">
@@ -187,8 +182,10 @@
                 <p class="cost">от 5000Р</p>
               </div>
               <div class="hotel-information">
-                <a class="detail-information" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-choose">В ИЗБРАННОЕ</button>
+                <a class="detail-information" href="#"
+                  ><span class="detail">ПОДРОБНЕЕ</span></a
+                >
+                <button class="button-favorite">В ИЗБРАННОМ</button>
               </div>
               <div class="rating-star">
                 <img
@@ -232,7 +229,9 @@
                 <p class="cost">от 2500Р</p>
               </div>
               <div class="hotel-information">
-                <a href="#" class="detail-information">ПОДРОБНЕЕ</a>
+                <a href="#" class="detail-information"
+                  ><span class="detail">ПОДРОБНЕЕ</span></a
+                >
                 <button class="button-choose">В ИЗБРАННОЕ</button>
               </div>
               <div class="rating-star">
@@ -270,7 +269,9 @@
                 <p class="cost">от 1500Р</p>
               </div>
               <div class="hotel-information">
-                <a class="detail-information" href="#">ПОДРОБНЕЕ</a>
+                <a class="detail-information" href="#"
+                  ><span class="detail">ПОДРОБНЕЕ</span></a
+                >
                 <button class="button-choose">В ИЗБРАННОЕ</button>
               </div>
               <div class="rating-star">
@@ -293,11 +294,61 @@
             </section>
           </li>
         </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <img
+              src="./catalogfoto/pagination1.svg"
+              width="60"
+              height="60"
+              alt="ссылка на выбор"
+            />
+          </li>
+          <li class="pagination-item">
+            <img
+              src="./catalogfoto/pagination2.svg"
+              width="60"
+              height="60"
+              alt="ссылка на выбор"
+            />
+          </li>
+          <li class="pagination-item">
+            <img
+              src="./catalogfoto/pagination3.svg"
+              width="60"
+              height="60"
+              alt="ссылка на выбор"
+            />
+          </li>
+          <li class="pagination-item">
+            <img
+              src="./catalogfoto/pagination4.svg"
+              width="60"
+              height="60"
+              alt="ссылка на выбор"
+            />
+          </li>
+          <li class="pagination-item">
+            <img
+              src="./catalogfoto/pagination5.svg"
+              width="60"
+              height="60"
+              alt="ссылка на выбор"
+            />
+          </li>
+          <li class="pagination-item">
+            <img
+              src="./catalogfoto/pagination6.svg"
+              width="60"
+              height="60"
+              alt="ссылка на выбор"
+            />
+          </li>
+        </ul>
       </article>
       <section class="information">
-        <h3 class="information-title">
-          <a href="#">Подпишитесь на рассылку</a>
-        </h3>
+        <a class="information-link" href="#"
+          ><h3 class="information-title">Подпишитесь на рассылку</h3></a
+        >
         <p class="information-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
