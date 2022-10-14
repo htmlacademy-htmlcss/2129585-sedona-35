@@ -17,7 +17,7 @@
         />
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -74,29 +74,29 @@
             />
             <a href="#"><p class="hotel">Гостиницы</p></a>
           </div>
-          <p class="hotel-service">Инфраструктура:</p>
-          <br />
-          <form
-            class="hotel-apartment"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label><input type="checkbox" checked />Бассейн</label><br />
-            <label><input type="checkbox" checked />Парковка</label><br />
-            <label><input type="checkbox" />Wi-Fi</label><br />
-            <p class="hotel-service">Тип Жилья:</p>
-            <br />
-            <label><input type="radio" name="hotel" checked />Гостиница</label
-            ><br />
-            <label><input type="radio" name="hotel" />Мотель</label><br />
-            <label><input type="radio" name="hotel" />Апартаменты</label><br />
-          </form>
-          <p class="hotel-service">Стоимость,Р:</p>
-          <form class="" action="https://echo.htmlacademy.ru/" method="post">
-            <label><input type="range" min="0" max="900" /></label>
-          </form>
-          <button class="button-use">Применить</button>
-          <a class="cancel" href="#">Сбросить</a>
+          <div class="infrastructure">
+            <p class="hotel-service">Инфраструктура:</p>
+            <form
+              class="hotel-apartment"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <label><input type="checkbox" checked />Бассейн</label>
+              <label><input type="checkbox" checked />Парковка</label>
+              <label><input type="checkbox" />Wi-Fi</label><br />
+              <p class="hotel-service">Тип Жилья:</p>
+              <label><input type="radio" name="hotel" checked />Гостиница</label
+              ><br />
+              <label><input type="radio" name="hotel" />Мотель</label>
+              <label><input type="radio" name="hotel" />Апартаменты</label>
+            </form>
+            <p class="hotel-service">Стоимость,Р:</p>
+            <form class="" action="https://echo.htmlacademy.ru/" method="post">
+              <label><input type="range" min="0" max="900" /></label>
+            </form>
+            <button class="button-use">Применить</button>
+            <a class="cancel" href="#">Сбросить</a>
+          </div>
         </section>
         <article class="description-hotels">
           <div class="article-container">
@@ -148,9 +148,7 @@
                     <p class="cost">от 4000Р</p>
                   </div>
                   <div class="hotel-information">
-                    <a class="detail-information" href="#"
-                      ><span class="detail">ПОДРОБНЕЕ</span></a
-                    >
+                    <a class="btn btn-information" href="#"> ПОДРОБНЕЕ</a>
                     <button class="button-choose">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
@@ -195,9 +193,7 @@
                     <p class="cost">от 5000Р</p>
                   </div>
                   <div class="hotel-information">
-                    <a class="detail-information" href="#"
-                      ><span class="detail">ПОДРОБНЕЕ</span></a
-                    >
+                    <a class="btn btn-information" href="#">ПОДРОБНЕЕ</a>
                     <button class="button-favorite">В ИЗБРАННОМ</button>
                   </div>
                   <div class="rating-star">
@@ -242,9 +238,7 @@
                     <p class="cost">от 2500Р</p>
                   </div>
                   <div class="hotel-information">
-                    <a href="#" class="detail-information"
-                      ><span class="detail">ПОДРОБНЕЕ</span></a
-                    >
+                    <a href="#" class="btn btn-information">ПОДРОБНЕЕ</a>
                     <button class="button-choose">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
@@ -282,9 +276,7 @@
                     <p class="cost">от 1500Р</p>
                   </div>
                   <div class="hotel-information">
-                    <a class="detail-information" href="#"
-                      ><span class="detail">ПОДРОБНЕЕ</span></a
-                    >
+                    <a class="btn btn-information" href="#">ПОДРОБНЕЕ</a>
                     <button class="button-choose">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">

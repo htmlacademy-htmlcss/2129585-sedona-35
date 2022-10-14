@@ -77,7 +77,6 @@ body {
 }
 .presentation {
   width: 1200px;
-  height: 485px;
   background-image: url("../indexfoto/background2.svg"),
     url("../indexfoto/fotobackground.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -85,6 +84,7 @@ body {
 }
 .information {
   background: #ffffff;
+  background-size: cover;
 }
 .title-information {
   color: #000000;
@@ -213,6 +213,7 @@ body {
   color: #333333;
 }
 .searchhotel {
+  width: 376px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -222,6 +223,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  background: #756157;
+  border-radius: 4px;
 }
 .subscribe {
   font-style: normal;
@@ -269,11 +272,11 @@ body {
 }
 .choose-hotels {
   width: 1200px;
-  height: 412px;
   margin: 0 auto;
   background-image: url("../catalogfoto/photomain.jpg");
   background-repeat: no-repeat;
   background-position: right, center;
+  background-size: cover;
 }
 .hotel {
   font-weight: 400;
@@ -325,9 +328,12 @@ body {
   width: 1060px;
   margin: 0 70px;
 }
+.infrastructure {
+  width: 1060px;
+  margin: 0 70px;
+}
 .description-hotels {
   background-color: #ffffff;
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
@@ -388,15 +394,13 @@ body {
   line-height: 21px;
   color: #333333;
 }
-.detail-information {
+.btn-information {
+  display: inline-block;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   background: #756157;
   border-radius: 4px;
   text-decoration: none;
-}
-.detail {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
