@@ -8,35 +8,65 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img
-          class="logo"
-          src="catalogfoto/logo.svg"
-          width="140"
-          height="70"
-          alt="Логотип компании Cедона"
-        />
+        <a class="logo" href="#"
+          ><img
+            class="logo-image"
+            src="images/logo.svg"
+            width="140"
+            height="70"
+            alt="Логотип компании Cедона"
+        /></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a
-              class="navigation-link navigation-link-selected"
-              href="index.html"
-              >Главная</a
-            >
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-catalog" href="#">Гостиницы</a>
+            <a
+              class="navigation-link navigation-catalog navigation-link-selected"
+              href="#"
+              >Гостиницы</a
+            >
           </li>
         </ul>
         <ul class="navigation-user">
           <li class="navigation-user-icon">
+            <a class="navigation-link-user" href="#">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"
+                  fill="#000"
+                />
+              </svg>
+            </a>
             <span class="visually-hidden">Поиск</span>
           </li>
           <li class="navigation-user-icon-like">
+            <a class="navigation-link-user" href="#">
+              <svg
+                class="icon-search"
+                width="18"
+                height="17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
+                  fill="#000"
+                />
+              </svg>
+            </a>
+            <span class="number-like">12</span>
             <span class="visually-hidden">Лайк</span>
           </li>
+
           <li class="navigation-accept">
             <button class="button-accept">Хочу сюда!</button>
           </li>
@@ -48,36 +78,12 @@
         <section class="choose-hotels">
           <div class="hotel-icons">
             <h1 class="title-choose-hotels">Гостиницы Седоны</h1>
-            <div class="icons-house-arrow">
-              <svg
-                class="icon-house"
-                width="13"
-                height="13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"
-                  fill="#fff"
-                />
-                <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff" />
-              </svg>
-              <svg
-                class="icon-arrow"
-                width="8"
-                height="11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.92 4.97 2.17.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z"
-                  fill="#fff"
-                />
-              </svg>
-              <span class="hotel">Гостиницы</span>
-            </div>
+            <ul class="icons-house-arrow">
+              <li><a class="house-icon" href="#"></a></li>
+              <li><a class="arrow-icon" href="#"></a></li>
+              <li class="hotel">Гостиницы</li>
+            </ul>
           </div>
-
           <form
             class="hotel-apartment"
             action="https://echo.htmlacademy.ru/"
@@ -85,22 +91,99 @@
           >
             <div class="infrastructure">
               <div class="service-infrastructure">
-                <p class="hotel-service">Инфраструктура:</p>
-                <label><input type="checkbox" checked />Бассейн</label>
-                <label><input type="checkbox" checked />Парковка</label>
-                <label><input type="checkbox" />Wi-Fi</label>
+                <p class="hotel-service hotel-infrastructure">
+                  Инфраструктура:
+                </p>
+                <label class="control">
+                  <input
+                    class="visually-hidden control-input"
+                    type="checkbox"
+                  />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
+                </label>
+                <label class="control"
+                  ><input
+                    class="visually-hidden control-input"
+                    type="checkbox"
+                  />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
+                </label>
+                <label class="control"
+                  ><input
+                    class="visually-hidden control-input"
+                    type="checkbox"
+                  />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
+                </label>
               </div>
               <div class="type-house-infrastructure">
                 <p class="hotel-service">Тип Жилья:</p>
-                <label
-                  ><input type="radio" name="hotel" checked />Гостиница</label
-                >
-                <label><input type="radio" name="hotel" />Мотель</label>
-                <label><input type="radio" name="hotel" />Апартаменты</label>
+                <label class="control"
+                  ><input
+                    class="visually-hidden control-input"
+                    name="apartment"
+                    type="radio"
+                  />
+                  <span class="control-mark-hotel"></span>
+                  <span class="control-label">Гостиница</span>
+                </label>
+                <label class="control"
+                  ><input
+                    class="visually-hidden control-input"
+                    name="apartment"
+                    type="radio"
+                  />
+                  <span class="control-mark-hotel"></span>
+                  <span class="control-label">Мотель</span>
+                </label>
+                <label class="control"
+                  ><input
+                    class="visually-hidden control-input"
+                    name="apartment"
+                    type="radio"
+                  />
+                  <span class="control-mark-hotel"></span>
+                  <span class="control-label">Апартаменты</span>
+                </label>
               </div>
               <div class="price-hotel">
                 <p class="hotel-service">Стоимость,Р:</p>
-                <label><input type="range" min="0" max="900" /></label>
+                <div class="price-range">
+                  <label class="input-range-price input-range-price-min">
+                    <input
+                      class="input-price"
+                      type="text"
+                      name="min-price"
+                      value="0"
+                    />
+                    <span class="input-range">от</span>
+                  </label>
+                  <label class="input-range-price input-range-price-max">
+                    <input
+                      class="input-price"
+                      type="text"
+                      name="max-price"
+                      value="9000"
+                    />
+                    <span class="input-range">до</span>
+                  </label>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <button
+                      type="button"
+                      class="range-toggle toggle-min"
+                    ></button>
+                    <button
+                      type="button"
+                      class="range-toggle toggle-max"
+                    ></button>
+                    <div class="range-bar"></div>
+                  </div>
+                </div>
               </div>
               <div class="button-service-hotel">
                 <label
@@ -131,9 +214,11 @@
                 action="http://echo.htmlacademy.ru/"
                 method="post"
               >
-                <select class="select-search" name="select-search-hotel">
-                  <option value="Сначала дешевые">Сначала дешевые</option>
-                </select>
+                <input
+                  class="select-search"
+                  name="select-search-hotel"
+                  placeholder="Сначала дешевые"
+                />
               </form>
               <ul class="search-icon">
                 <li class="icon-items">
@@ -161,7 +246,7 @@
                       stroke-width="2"
                     />
                     <defs>
-                      <clipPath id="a">
+                      <clipPath>
                         <path
                           fill="#fff"
                           transform="translate(16 17)"
@@ -196,7 +281,7 @@
                       stroke-width="2"
                     />
                     <defs>
-                      <clipPath id="a">
+                      <clipPath>
                         <path
                           fill="#fff"
                           transform="translate(16 17)"
@@ -228,7 +313,7 @@
                       stroke-width="2"
                     />
                     <defs>
-                      <clipPath id="a">
+                      <clipPath>
                         <path
                           fill="#fff"
                           transform="translate(16 17)"
@@ -244,7 +329,7 @@
             <ul class="description-hotel-list">
               <li class="hotel-item">
                 <section>
-                  <img src="catalogfoto/hotel1.jpg" alt="первый отель" />
+                  <img src="images/hotel1.jpg" alt="первый отель" />
 
                   <h3 class="title-hotel">Amara Resort & Spa</h3>
                   <div class="hotel-price">
@@ -256,41 +341,19 @@
                     <button class="button-choose">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
+                    <div class="star-wrapp">
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                    </div>
                     <p class="rating">Рейтинг 8,5</p>
                   </div>
                 </section>
               </li>
               <li class="hotel-item">
                 <section>
-                  <img src="catalogfoto/hotel2.jpg" alt="второй отель" />
+                  <img src="images/hotel2.jpg" alt="второй отель" />
                   <h3 class="title-hotel">Villas at Poco Diablo</h3>
                   <div class="hotel-price">
                     <p class="name">Гостиница</p>
@@ -301,41 +364,19 @@
                     <button class="button-favorite">В ИЗБРАННОМ</button>
                   </div>
                   <div class="rating-star">
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
+                    <div class="star-wrapp">
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                    </div>
                     <p class="rating">Рейтинг 9,5</p>
                   </div>
                 </section>
               </li>
               <li class="hotel-item">
                 <section>
-                  <img src="catalogfoto/hotel3.jpg" alt="третий отель" />
+                  <img src="images/hotel3.jpg" alt="третий отель" />
                   <h3 class="title-hotel">Desert Quail Inn</h3>
                   <div class="hotel-price">
                     <p class="name">Гостиница</p>
@@ -346,34 +387,18 @@
                     <button class="button-choose">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
+                    <div class="star-wrapp">
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                    </div>
                     <p class="rating">Рейтинг 6,9</p>
                   </div>
                 </section>
               </li>
               <li class="hotel-item">
                 <section>
-                  <img src="catalogfoto/hotel4.jpg" alt="четвертый отель" />
+                  <img src="images/hotel4.jpg" alt="четвертый отель" />
                   <h3 class="title-hotel">GreenTree Inn</h3>
                   <div class="hotel-price">
                     <p class="name">Гостиница</p>
@@ -384,20 +409,10 @@
                     <button class="button-choose">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
-                    <img
-                      class="star"
-                      src="catalogfoto/star.svg"
-                      width="18"
-                      height="17"
-                      alt="звезда"
-                    />
+                    <div class="star-wrapp">
+                      <span class="star"></span>
+                      <span class="star"></span>
+                    </div>
                     <p class="rating">Рейтинг 5,0</p>
                   </div>
                 </section>
@@ -418,28 +433,23 @@
           <p class="information-description">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form
-            class="newsletter-form"
-            action="http://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label>
-              <input
-                class="field-email"
-                type="text"
-                placeholder="Ваш e-mail"
-                name="newsletter-email"
-                required
-            /></label>
-            <label
-              ><input
-                class="field-subscribe"
-                type="submit"
-                name="submit"
-                value="Подписаться"
-              />
-            </label>
-          </form>
+          <div class="form-subscribe">
+            <form
+              class="newsletter-form"
+              action="http://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <label>
+                <input
+                  class="field-email"
+                  type="text"
+                  placeholder="Ваш e-mail"
+                  name="newsletter-email"
+                  required
+              /></label>
+            </form>
+            <button class="field-subscribe">Подписаться</button>
+          </div>
         </section>
       </div>
     </main>
@@ -539,5 +549,80 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h3 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
+          <form
+            class="modal-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <label class="modal-label">
+              Дата заезда:
+              <input
+                class="modal-input"
+                type="text"
+                name="date"
+                value="27 апреля 2020"
+            /></label>
+            <p class="modal-remind">Мы не можем отправить вас в прошлое</p>
+            <label class="modal-label">
+              Дата выезда:
+              <input
+                class="modal-input"
+                type="text"
+                name="date"
+                value="01 сентября 2021"
+            /></label>
+            <p class="modal-desicion-right">
+              На эти даты есть свободные номера. Пока есть
+            </p>
+          </form>
+          <div class="container-adult-kids">
+            <div class="adults-only">
+              <p class="adults-amount">Взрослые:</p>
+              <div class="adults-number">
+                <button class="button-number-reduce" type="button"></button>
+                <input class="input-adults" name="number-people" value="2" />
+                <button class="button-number-increase" type="button"></button>
+              </div>
+            </div>
+            <div class="kids-only">
+              <p class="kids-amount">Дети:</p>
+              <svg
+                class="tooltip-modal"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                  fill="#fff"
+                />
+              </svg>
+              <span class="text-tooltip"
+                >Укажите количество детей, которые будут с вами, возраст которых
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
+              >
+              <div class="kids-number">
+                <button class="button-number-reduce" type="button"></button>
+                <input class="input-adults" name="number-people" value="2" />
+                <button class="button-number-increase" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <button class="button-find" type="button">НАЙТИ</button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

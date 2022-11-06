@@ -8,13 +8,15 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img
-          class="logo"
-          src="indexfoto/logo.svg"
-          width="140"
-          height="70"
-          alt="Логотип компании Cедона"
-        />
+        <a class="logo" href="#">
+          <img
+            class="logo-image"
+            src="images/logo.svg"
+            width="140"
+            height="70"
+            alt="Логотип компании Cедона"
+          />
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-selected" href="#"
@@ -32,9 +34,37 @@
         </ul>
         <ul class="navigation-user">
           <li class="navigation-user-icon">
+            <a class="navigation-link-user" href="#">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
             <span class="visually-hidden">Поиск</span>
           </li>
           <li class="navigation-user-icon-like">
+            <a class="navigation-link-user navigation-icon" href="#">
+              <svg
+                class="icon-search"
+                width="18"
+                height="17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <span class="number-like">12</span>
             <span class="visually-hidden">Лайк</span>
           </li>
           <li class="navigation-accept">
@@ -48,7 +78,7 @@
         <section class="presentation">
           <img
             class="title-presentation"
-            src="indexfoto/title.svg"
+            src="images/title.svg"
             width="458"
             height="352"
             alt="WELCOME to the gorgeous SEDONA"
@@ -73,7 +103,7 @@
             <li class="foto">
               <img
                 class="foto-hotel"
-                src="indexfoto/photo1.jpg"
+                src="images/photo1.jpg"
                 width="800"
                 height="384"
                 alt="первый отель"
@@ -105,7 +135,7 @@
             <li class="foto">
               <img
                 class="foto-canyon"
-                src="indexfoto/canyuon.jpg"
+                src="images/canyuon.jpg"
                 width="800"
                 height="384"
                 alt="фото каньёна"
@@ -153,27 +183,23 @@
           <p class="subscribe-description">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form
-            class="newsletter-form"
-            action="http://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label>
-              <input
-                class="field-email"
-                type="text"
-                placeholder="Ваш e-mail"
-                name="newsletter-email"
-                required
-            /></label>
-            <label
-              ><input
-                class="field-subscribe"
-                type="submit"
-                name="submit"
-                value="Подписаться"
-            /></label>
-          </form>
+          <div class="form-subscribe">
+            <form
+              class="newsletter-form"
+              action="http://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <label>
+                <input
+                  class="field-email"
+                  type="text"
+                  placeholder="Ваш e-mail"
+                  name="newsletter-email"
+                  required
+              /></label>
+            </form>
+            <button class="field-subscribe">Подписаться</button>
+          </div>
         </section>
       </div>
     </main>
