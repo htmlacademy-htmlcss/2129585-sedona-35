@@ -85,6 +85,17 @@ body {
   font-size: 20px;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.navigation-link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
 .navigation-link-selected::before {
   position: absolute;
   top: 100%;
@@ -166,6 +177,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  border: none;
 }
 
 .button-accept:hover {
@@ -501,6 +513,7 @@ body {
   line-height: 24px;
   color: #000000;
   border: 0;
+  outline: none;
 }
 
 .field-subscribe {
@@ -726,15 +739,17 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 30%;
-  right: 30%;
+  top: 50%;
+  left: 50%;
   width: 12px;
   height: 10px;
-  background-image: url("../images/vector\ .svg");
+  background-image: url("../images/vector.svg");
   content: "";
+  transform: translate(-50%, -50%);
 }
 
 .control-mark-hotel {
+  position: relative;
   width: 20px;
   height: 20px;
   background: #f2f2f2;
@@ -744,12 +759,14 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark-hotel::before {
   position: absolute;
-  top: 11%;
-  left: 3%;
+  top: 50%;
+  left: 50%;
   width: 10px;
   height: 10px;
-  background-image: url("../images/vector\ 3.svg");
+  background: #3f5e72;
+  border-radius: 50%;
   content: "";
+  transform: translate(-50%, -50%);
 }
 
 .control-label {
@@ -974,6 +991,7 @@ body {
 }
 
 .select-search {
+  display: inline-block;
   width: 292px;
   margin-left: 160px;
   padding: 14px 0 14px 20px;
@@ -983,9 +1001,14 @@ body {
   color: #333333;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  background-image: url("../images/arrow2.svg");
-  background-repeat: no-repeat;
-  background-position: 250px 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url(../images/arrow2.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: right 20px top 50%, 0 0;
+  background-size: 12px auto, 100%;
 }
 
 .select-search:hover {
@@ -1095,6 +1118,7 @@ body {
   padding: 8px 20px;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn-information:hover {
@@ -1109,6 +1133,8 @@ body {
   height: 36px;
   background: #82b3d3;
   border-radius: 4px;
+  font-family: "PT Sans";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1125,24 +1151,13 @@ body {
 .button-choose:active {
   background: #82b3d3;
 }
-.button-favorite {
-  display: inline-block;
-  width: 140px;
-  height: 36px;
+.button-choose-selected {
   background: #7db54f;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
 }
-.button-favorite:hover {
+.button-choose-selected:hover {
   background: #6c9e42;
 }
-.button-favorite:active {
+.button-choose-selected:active {
   background: #7db54f;
 }
 
@@ -1171,9 +1186,15 @@ body {
   height: 37px;
   background: #f2f2f2;
   border-radius: 4px;
-  padding: 8px 26px;
+  padding: 8px 24px;
   margin-bottom: 0;
   margin-left: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
 }
 .pagination-list {
   display: flex;
@@ -1275,15 +1296,15 @@ body {
 }
 
 .modal-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 64px;
   right: 52px;
   width: 52px;
   height: 52px;
   border: none;
-  background-image: url("../images/buttonclose.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   border-radius: 50%;
 }
@@ -1292,13 +1313,14 @@ body {
   background: #e6e6e6;
 }
 
-.modal-close-button:active {
-  background: #e6e6e6;
-}
-
 .modal-close-button:focus {
   background: #e6e6e6;
   border: 3px solid #83b3d3;
+}
+.modal-close-button:active {
+  background: #e6e6e6;
+  opacity: 0.5;
+  border: none;
 }
 
 .modal-content {
@@ -1347,6 +1369,7 @@ body {
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: 400px 15px;
+  border: none;
 }
 
 .modal-remind {
@@ -1394,15 +1417,30 @@ body {
 }
 
 .button-number-reduce {
-  grid-area: 1/1;
-  padding: 23px;
-  width: 2px;
-  height: 14px;
-  background-image: url("../images/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   cursor: pointer;
+}
+
+.control-number {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.control-number:hover {
+  color: #000000;
+}
+
+.button-number-reduce:focus,
+.button-number-increase:focus {
+  color: #000000;
+  border: 3px solid #82b3d3;
+  border-radius: 4px;
+}
+
+.control-number:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .input-adults {
@@ -1417,14 +1455,13 @@ body {
 }
 
 .button-number-increase {
-  width: 14px;
-  padding: 17px;
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   cursor: pointer;
 }
+
 .kids-amount {
   font-weight: 700;
   font-size: 20px;
