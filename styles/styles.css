@@ -13,12 +13,15 @@
   src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
+
 html {
   height: 100%;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -30,6 +33,7 @@ body {
   color: #242424;
   background-color: #fbf7f4;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,6 +44,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .page-header {
   color: rgba(255, 255, 255, 1);
   background: #ffffff;
@@ -63,6 +68,7 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -127,19 +133,18 @@ body {
   color: #000000;
   opacity: 0.6;
 }
+
 .navigation-user-icon {
   display: flex;
   align-items: center;
   min-width: 44px;
   min-height: 64px;
+  padding-top: 4px;
+  padding-left: 6px;
 }
 
 .navigation-user-icon-like {
   position: relative;
-  display: flex;
-  align-items: center;
-  min-width: 44px;
-  min-height: 64px;
   margin-right: 15px;
 }
 
@@ -148,8 +153,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 10px;
-  left: 7px;
+  top: 12px;
+  left: 14px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -171,6 +176,8 @@ body {
   margin: 14px 0 14px 0;
   background: #756157;
   border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -192,28 +199,33 @@ body {
   margin: 0 auto;
   width: 1200px;
 }
+
 .page-main {
   color: #242424;
   background-color: #fbf7f4;
 }
+
 .title-presentation {
   text-align: center;
-  margin: 51px 371px 82px 371px;
+  margin: 51px 371px 78px 371px;
 }
+
 .presentation {
   width: 1200px;
   background-image: url("../images/background2.svg"),
     url("../images/fotobackground.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
-  background-size: cover;
 }
+
 .information {
   width: 1200px;
   background: #ffffff;
-  padding: 69px 220px 90px;
+  padding: 68px 220px 67px;
 }
+
 .title-information {
+  margin: 0;
   color: #000000;
   font-style: normal;
   font-weight: 700;
@@ -222,6 +234,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
 .information-reasons {
   margin-top: 25px;
   font-style: normal;
@@ -231,6 +244,7 @@ body {
   color: #333333;
   text-align: center;
 }
+
 .description-list {
   width: 1200px;
   display: flex;
@@ -239,6 +253,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .advantages-list {
   display: flex;
   margin: 0;
@@ -247,12 +262,14 @@ body {
   width: 1200px;
   height: 384px;
 }
+
 .advantages-attraction {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .advantages-service {
   display: flex;
   margin: 0;
@@ -260,6 +277,7 @@ body {
   list-style: none;
   height: 384px;
 }
+
 .description-item,
 .attraction {
   width: 400px;
@@ -267,14 +285,12 @@ body {
   background: #82b3d3;
   background-image: url("../images/rectangle1.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 178px;
 }
 
 .description-title,
 .bridge-attraction {
-  margin-bottom: 62px;
-  margin-left: 101px;
-  margin-right: 101px;
+  margin: 0 114px 62px 114px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -290,8 +306,8 @@ body {
 
 .description-sedona,
 .attraction-description {
-  margin-right: 75px;
-  margin-left: 75px;
+  margin-right: 80px;
+  margin-left: 80px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -324,7 +340,7 @@ body {
   padding-top: 103px;
   background-image: url("../images/rectangle2.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 189px;
 }
 
 .service-house {
@@ -335,6 +351,7 @@ body {
   background-repeat: no-repeat;
   background-position: center 80px;
 }
+
 .service-suvenirs {
   width: 400px;
   padding-top: 182px;
@@ -366,6 +383,10 @@ body {
   color: #000000;
 }
 
+.advantages-title-service {
+  margin-bottom: 30px;
+}
+
 .advantages-description {
   margin: 0 70px;
   font-style: normal;
@@ -385,8 +406,9 @@ body {
   text-align: center;
   color: #333333;
 }
+
 .food-description {
-  margin: 0 79px;
+  margin: 0 88px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -413,12 +435,12 @@ body {
   width: 1200px;
   background: #ffffff;
   padding-top: 96px;
-  padding-bottom: 104px;
+  padding-bottom: 92px;
   margin: 0;
 }
 
 .suggestion-title {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -440,9 +462,10 @@ body {
 }
 
 .searchhotel {
-  width: 390px;
-  margin: 62px 412px 0 412px;
+  width: 376px;
+  margin: 54px 412px 0 412px;
   padding: 8px 20px;
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -508,6 +531,8 @@ body {
   height: 52px;
   background: #f2f2f2;
   padding: 14px 0 14px 20px;
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -522,6 +547,8 @@ body {
   margin: 0;
   padding: 8px;
   text-align: center;
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -589,7 +616,7 @@ body {
 .contacts-phone {
   width: 340px;
   padding: 45px 0 35px 0;
-  margin: 0 235px 0 209px;
+  margin: 0 236px 0 221px;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -602,6 +629,7 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
 .phone:hover {
   color: #756157;
 }
@@ -644,12 +672,14 @@ body {
   background-size: cover;
   padding-top: 35px;
 }
+
 .hotel {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
 }
+
 .title-choose-hotels {
   font-weight: 700;
   font-size: 60px;
@@ -657,6 +687,7 @@ body {
   color: #ffffff;
   margin: 0;
 }
+
 .hotel-icons {
   display: flex;
   flex-direction: column;
@@ -679,6 +710,7 @@ body {
 .hotel:active {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .hotel:focus {
   color: #ffffff;
 }
@@ -830,6 +862,8 @@ body {
   padding: 12px 20px;
   border: 0;
   background: #f2f2f2;
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -844,6 +878,7 @@ body {
   opacity: 0.3;
   padding: 12px 20px;
 }
+
 .range-scale {
   position: relative;
   margin-top: 48px;
@@ -967,11 +1002,13 @@ body {
   line-height: 24px;
   color: #242424;
 }
+
 .article-container {
   display: flex;
   flex-direction: column;
   margin: 0 70px;
 }
+
 .search-panel {
   display: flex;
   flex-direction: row;
@@ -1048,6 +1085,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
+
 .icon-items:focus {
   border-radius: #68a2ca;
 }
@@ -1061,6 +1099,7 @@ body {
   margin: 0;
   list-style: none;
 }
+
 .hotel-item {
   width: 340px;
   min-height: 438px;
@@ -1083,6 +1122,7 @@ body {
   line-height: 28px;
   color: #000000;
 }
+
 .hotel-price {
   display: flex;
   flex-wrap: wrap;
@@ -1103,6 +1143,7 @@ body {
   margin: 0;
   justify-content: space-between;
 }
+
 .btn-information {
   display: inline-block;
   width: 140px;
@@ -1124,9 +1165,11 @@ body {
 .btn-information:hover {
   background: #615048;
 }
+
 .btn-information:active {
   background: #756157;
 }
+
 .button-choose {
   display: inline-block;
   width: 140px;
@@ -1151,12 +1194,15 @@ body {
 .button-choose:active {
   background: #82b3d3;
 }
+
 .button-choose-selected {
   background: #7db54f;
 }
+
 .button-choose-selected:hover {
   background: #6c9e42;
 }
+
 .button-choose-selected:active {
   background: #7db54f;
 }
@@ -1168,6 +1214,7 @@ body {
   justify-content: space-between;
   margin: 0;
 }
+
 .star-wrapp {
   display: flex;
 }
@@ -1196,6 +1243,7 @@ body {
   text-transform: uppercase;
   color: #333333;
 }
+
 .pagination-list {
   display: flex;
   flex-direction: row;
@@ -1204,6 +1252,7 @@ body {
   margin: 40px 0 60px 0;
   padding: 0;
 }
+
 .pagination-item-unselected {
   display: flex;
   width: 60px;
@@ -1253,6 +1302,7 @@ body {
   background: #ffffff;
   padding: 96px 0 104px 0;
 }
+
 .information-title {
   margin: 0 auto;
   max-width: 410px;
@@ -1265,7 +1315,7 @@ body {
 }
 
 .information-description {
-  margin: 0 350px 54px 350px;
+  margin: 20px 350px 54px 350px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -1286,6 +1336,7 @@ body {
 .modal-container-close {
   display: none;
 }
+
 .modal {
   position: relative;
   width: 717px;
@@ -1317,6 +1368,7 @@ body {
   background: #e6e6e6;
   border: 3px solid #83b3d3;
 }
+
 .modal-close-button:active {
   background: #e6e6e6;
   opacity: 0.5;
@@ -1392,6 +1444,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 .adults-only {
   display: flex;
   flex-direction: row;
