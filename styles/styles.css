@@ -18,7 +18,9 @@ html {
   height: 100%;
 }
 
-* {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -176,7 +178,7 @@ body {
   margin: 14px 0 14px 0;
   background: #756157;
   border-radius: 4px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -206,6 +208,8 @@ body {
 }
 
 .title-presentation {
+  height: auto;
+  width: auto;
   text-align: center;
   margin: 51px 371px 75px 371px;
 }
@@ -216,6 +220,7 @@ body {
     url("../images/fotobackground.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
+  background-color: #68a2ca;
 }
 
 .information {
@@ -300,8 +305,11 @@ body {
   color: #ffffff;
 }
 
-.foto-hotel {
+.main-hotel,
+.foto-canyon {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .description-sedona,
@@ -427,9 +435,6 @@ body {
   color: #333333;
 }
 
-.foto-canyon {
-  display: block;
-}
 
 .suggestion {
   width: 1200px;
@@ -465,7 +470,7 @@ body {
   width: 376px;
   margin: 53px 412px 0 412px;
   padding: 9px 20px 7px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -532,7 +537,7 @@ body {
   height: 52px;
   background: #f2f2f2;
   padding: 14px 0 14px 20px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -549,7 +554,7 @@ body {
   margin: 0;
   padding: 8px;
   text-align: center;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -673,6 +678,7 @@ body {
   background-repeat: no-repeat;
   background-position: right, center;
   background-size: cover;
+  background-color: #68a2ca;
   padding-top: 35px;
 }
 
@@ -771,6 +777,7 @@ body {
   height: 20px;
   background: #f2f2f2;
   margin-bottom: 19px;
+  border-radius: 4px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -782,6 +789,10 @@ body {
   background-image: url("../images/vector.svg");
   content: "";
   transform: translate(-50%, -50%);
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  border: 2px solid #000000;
 }
 
 .control-mark-hotel {
@@ -805,6 +816,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.control-input[type="radio"]:focus + .control-mark-hotel {
+  border: 2px solid #000000;
+}
+
 .control-label {
   font-weight: 400;
   font-size: 18px;
@@ -814,14 +829,18 @@ body {
 
 .control-label:active {
   opacity: 0.3;
+  text-decoration: underline;
+  text-decoration-color: #6A5ACD;
+}
+
+.control-label:focus {
+  color: #000000;
 }
 
 .control-label:hover {
   opacity: 0.6;
-}
-
-.control-label:focus {
-  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #6A5ACD;
 }
 
 .type-house-infrastructure {
@@ -866,7 +885,7 @@ body {
   padding: 12px 20px;
   border: 0;
   background: #f2f2f2;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -961,7 +980,7 @@ body {
   height: 36px;
   background: #82b3d3;
   border-radius: 4px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -982,7 +1001,7 @@ body {
 
 .cancel {
   padding: 8px 0;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1040,7 +1059,7 @@ body {
   width: 292px;
   margin-left: 160px;
   padding: 11px 0 14px 16px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1097,7 +1116,7 @@ body {
 }
 
 .icon-items:focus {
-  border-radius: #68a2ca;
+  border-radius: 4px;
 }
 
 .description-hotel-list {
@@ -1108,6 +1127,11 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.foto-hotel {
+  width: 100%;
+  height: 100%;
 }
 
 .hotel-item {
@@ -1195,7 +1219,7 @@ body {
   height: 36px;
   background: #82b3d3;
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1249,13 +1273,13 @@ body {
 
 .rating {
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   background: #f2f2f2;
   border-radius: 4px;
   padding: 10px 24px;
   margin-bottom: 0;
   margin-left: auto;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1270,7 +1294,7 @@ body {
   flex-direction: row;
   gap: 8px;
   list-style: none;
-  margin: 80px 0 60px 0;
+  margin: 78px 0 60px 0;
   padding: 0;
 }
 
@@ -1403,7 +1427,7 @@ body {
 
 .modal-title {
   margin: 0 0 61px 0;
-  font-family: "PT Sans";
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1432,7 +1456,7 @@ body {
 .modal-input {
   width: 440px;
   padding: 16px 20px 12px;
-  font-family: "PT Sans";
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1444,6 +1468,7 @@ body {
   background-repeat: no-repeat;
   background-position: 402px 21px;
   border: none;
+  cursor: pointer;
 }
 
 .modal-remind {

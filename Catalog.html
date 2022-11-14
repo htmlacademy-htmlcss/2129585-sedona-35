@@ -4,6 +4,8 @@
     <meta charset="utf-8" >
     <title>HTML Academy: Catalog-Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.png" sizes="32x32" type="images/png">
   </head>
   <body>
     <header class="page-header">
@@ -14,7 +16,7 @@
             src="images/logo.svg"
             width="140"
             height="70"
-            alt="Логотип компании Cедона">
+            alt="Логотип компании Cедона.">
           </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -33,7 +35,7 @@
         <ul class="navigation-user">
           <li class="navigation-user-icon">
             <a class="navigation-link-user" href="#">
-              <svg
+              <svg role="img" aria-label="Строка поиска."
                 width="20"
                 height="20"
                 fill="none"
@@ -47,9 +49,8 @@
           </li>
           <li class="navigation-user-icon navigation-user-icon-like">
             <a class="navigation-link-user" href="#">
-              <svg
-                class="icon-search"
-                width="18"
+              <svg role="img" aria-label="Выбрать."
+              width="18"
                 height="17"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +63,7 @@
             <span class="visually-hidden">Лайк</span>
           </li>
           <li class="navigation-accept">
-            <button class="button-accept">Хочу сюда!</button>
+            <button class="button-accept" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -73,7 +74,7 @@
           <div class="hotel-icons">
             <h1 class="title-choose-hotels">Гостиницы Седоны</h1>
             <ul class="icons-house-arrow">
-              <li><a class="house-icon" href="#"></a></li>
+              <li><a class="house-icon" href="#"></a><span class="visually-hidden">Картинка в виде дома.</span></li>
               <li><a class="arrow-icon" href="#"></a></li>
               <li class="hotel">Гостиницы</li>
             </ul>
@@ -203,7 +204,7 @@
               </form>
               <ul class="search-icon">
                 <li class="icon-items">
-                  <svg
+                  <svg role="img" aria-label="Иконка для выбора."
                     aria-hidden="true"
                     focusable="false"
                     width="48"
@@ -237,7 +238,7 @@
                   </svg>
                 </li>
                 <li class="icon-items">
-                  <svg
+                  <svg role="img" aria-label="Для мнения."
                     aria-hidden="true"
                     focusable="false"
                     width="48"
@@ -271,7 +272,8 @@
                   </svg>
                 </li>
                 <li class="icon-items">
-                  <svg
+                  <svg role="img" aria-label="Иконка для обратной связи." aria-hidden="true"
+                  focusable="false"
                     width="48"
                     height="48"
                     fill="none"
@@ -306,7 +308,7 @@
             <ul class="description-hotel-list">
               <li class="hotel-item">
                 <section>
-                  <img src="images/hotel1.jpg" alt="первый отель">
+                  <img class="foto-hotel" src="images/hotel1.jpg" width="300" height="212" alt="Первый отель.">
                   <h3 class="title-hotel">Amara Resort & Spa</h3>
                   <div class="hotel-price">
                     <p class="name-hotel">Гостиница</p>
@@ -314,7 +316,7 @@
                   </div>
                   <div class="hotel-information">
                     <a class="btn btn-information" href="#"> ПОДРОБНЕЕ</a>
-                    <button class="button-choose">В ИЗБРАННОЕ</button>
+                    <button class="button-choose" type="button">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
                     <div class="star-wrapp">
@@ -329,7 +331,7 @@
               </li>
               <li class="hotel-item">
                 <section>
-                  <img src="images/hotel2.jpg" alt="второй отель">
+                  <img class="foto-hotel" src="images/hotel2.jpg" width="300" height="212" alt="Второй отель.">
                   <h3 class="title-hotel">Villas at Poco Diablo</h3>
                   <div class="hotel-price">
                     <p class="name-hotel">Гостиница</p>
@@ -337,7 +339,7 @@
                   </div>
                   <div class="hotel-information">
                     <a class="btn btn-information" href="#">ПОДРОБНЕЕ</a>
-                    <button class="button-choose button-choose-selected">
+                    <button class="button-choose button-choose-selected" type="button">
                       В ИЗБРАННОМ
                     </button>
                   </div>
@@ -354,7 +356,7 @@
               </li>
               <li class="hotel-item">
                 <section>
-                  <img src="images/hotel3.jpg" alt="третий отель">
+                  <img class="foto-hotel" src="images/hotel3.jpg" width="300" height="212" alt="Третий отель.">
                   <h3 class="title-hotel">Desert Quail Inn</h3>
                   <div class="hotel-price">
                     <p class="name-hotel">Гостиница</p>
@@ -362,7 +364,7 @@
                   </div>
                   <div class="hotel-information">
                     <a href="#" class="btn btn-information">ПОДРОБНЕЕ</a>
-                    <button class="button-choose">В ИЗБРАННОЕ</button>
+                    <button class="button-choose" type="button">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
                     <div class="star-wrapp">
@@ -376,7 +378,7 @@
               </li>
               <li class="hotel-item hotel-item-last">
                 <section>
-                  <img src="images/hotel4.jpg" alt="четвертый отель">
+                  <img class="foto-hotel" src="images/hotel4.jpg" width="300" height="212" alt="Четвертый отель.">
                   <h3 class="title-hotel">GreenTree Inn</h3>
                   <div class="hotel-price">
                     <p class="name-hotel">Гостиница</p>
@@ -384,7 +386,7 @@
                   </div>
                   <div class="hotel-information">
                     <a class="btn btn-information" href="#">ПОДРОБНЕЕ</a>
-                    <button class="button-choose">В ИЗБРАННОЕ</button>
+                    <button class="button-choose" type="button">В ИЗБРАННОЕ</button>
                   </div>
                   <div class="rating-star">
                     <div class="star-wrapp">
@@ -425,7 +427,7 @@
                   required>
                 </label>
             </form>
-            <button class="field-subscribe">Подписаться</button>
+            <button class="field-subscribe" type="button">Подписаться</button>
           </div>
         </section>
       </div>
@@ -433,11 +435,11 @@
     <footer class="page-footer">
       <div class="footer-container">
         <section class="social-networks">
-          <h2 class="visually-hidden">Social-networks</h2>
+          <h4 class="visually-hidden">Social-networks</h4>
           <ul class="social-list">
             <li class="social-item">
               <a class="social-item-link" href="#"
-                ><svg
+                ><svg role="img" aria-label="В контакте."
                   aria-hidden="true"
                   focusable="false"
                   width="25"
@@ -450,11 +452,12 @@
                     d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"
                     fill="currentColor"/>
                 </svg>
+                <span class="visually-hidden">Социальная сеть в контакте.</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-item-link" href="#"
-                ><svg
+                ><svg role="img" aria-label="Телеграмм."
                   aria-hidden="true"
                   focusable="false"
                   width="18"
@@ -465,11 +468,13 @@
                     d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"
                     fill="currentColor"/>
                 </svg>
+                <span class="visually-hidden">Социальная сеть телеграмм.</span>
+
               </a>
             </li>
             <li class="social-item">
               <a class="social-item-link" href="#"
-                ><svg
+                ><svg role="img" aria-label="Ютуб."
                   aria-hidden="true"
                   focusable="false"
                   width="23"
@@ -480,6 +485,7 @@
                     d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"
                     fill="currentColor"/>
                 </svg>
+                <span class="visually-hidden">Социальная сеть ютуб.</span>
               </a>
             </li>
           </ul>
@@ -491,7 +497,7 @@
         <section class="website">
           <h2 class="visually-hidden">Website</h2>
           <a class="website-link" href="#">
-            <svg
+            <svg role="img" aria-label="Ссылка на сайт."
               aria-hidden="true"
               focusable="false"
               width="115"
@@ -508,8 +514,8 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
-          <svg
+        <button class="modal-close-button" type="button">
+          <svg role="img" aria-label="Кнопка закрыть."
             width="15"
             height="15"
             viewBox="0 0 15 15"
@@ -547,13 +553,12 @@
             <p class="modal-desicion-right">
               На эти даты есть свободные номера. Пока есть.
             </p>
-          </form>
-          <div class="container-adult-kids">
+            <div class="container-adult-kids">
             <div class="adults-only">
               <p class="adults-amount">Взрослые:</p>
               <div class="adults-number">
                 <button class="button-number-reduce" type="button">
-                  <svg
+                  <svg role="img" aria-label="Уменьшить."
                     class="control-number"
                     width="14"
                     height="2"
@@ -565,7 +570,7 @@
                 </button>
                 <input class="input-adults" name="number-people" value="2">
                 <button class="button-number-increase" type="button">
-                  <svg
+                  <svg role="img" aria-label="Увеличить."
                     class="control-number"
                     width="14"
                     height="14"
@@ -581,7 +586,7 @@
             </div>
             <div class="kids-only">
               <p class="kids-amount">Дети:</p>
-              <svg
+              <svg role="img" aria-label="Тултип."
                 class="tooltip-modal"
                 width="26"
                 height="26"
@@ -600,7 +605,7 @@
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               <div class="kids-number">
                 <button class="button-number-reduce" type="button">
-                  <svg
+                  <svg role="img" aria-label="Уменьшить."
                     class="control-number"
                     width="14"
                     height="2"
@@ -612,7 +617,7 @@
                 </button>
                 <input class="input-adults" name="number-people" value="2">
                 <button class="button-number-increase" type="button">
-                  <svg
+                  <svg role="img" aria-label="Увеличить."
                     class="control-number"
                     width="14"
                     height="14"
@@ -627,7 +632,8 @@
               </div>
             </div>
           </div>
-          <button class="button-find" type="button">НАЙТИ</button>
+          <button class="button-find" type="submit">НАЙТИ</button>
+          </form>
         </section>
       </div>
     </div>
