@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon.png" sizes="32x32" type="images/png">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="images/png">
   </head>
   <body>
     <header class="page-header">
@@ -34,7 +34,7 @@
         <ul class="navigation-user">
           <li class="navigation-user-icon">
             <a class="navigation-link-user" href="#">
-              <svg
+              <svg role="img" aria-label="Иконка поиска."
                 width="20"
                 height="20"
                 fill="none"
@@ -48,7 +48,7 @@
           </li>
           <li class="navigation-user-icon navigation-user-icon-like">
             <a class="navigation-link-user navigation-icon" href="#">
-              <svg
+              <svg role="img" aria-label="Иконка лайк."
                 class="icon-search"
                 width="18"
                 height="17"
@@ -168,7 +168,7 @@
             Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <button class="searchhotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <button class="searchhotel" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         </section>
         <section class="subscribe-information">
           <h3 class="subscribe">Подпишитесь на рассылку</h3>
@@ -188,7 +188,7 @@
                   name="newsletter-email"
                   required></label>
             </form>
-            <button class="field-subscribe" type="button">Подписаться</button>
+            <button class="field-subscribe" type="submit">Подписаться</button>
           </div>
         </section>
       </div>
@@ -257,7 +257,7 @@
         </section>
         <section class="website">
           <h4 class="visually-hidden">Website</h4>
-          <a class="website-link" href="#">
+          <a class="website-link" href="https://htmlacademy.ru/">
             <svg role="img" aria-label="Ссылка на сайт."
               aria-hidden="true"
               focusable="false"
